@@ -6,8 +6,12 @@ namespace TextQuest
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Добро пожаловать в текстовый квест!");
-            Console.WriteLine("Вы просыпаетесь в темной комнате. Как вы будете действовать?");
+            Console.WriteLine("Приветствуем тебя, искатель приключений!");
+            Console.WriteLine("Перед тобой непростой путь, полный опасностей и загадок.");
+            Console.WriteLine("Сможешь ли ты преодолеть все препятствия и достичь своей цели?");
+            System.Threading.Thread.Sleep(2000); // Пауза в 2 секунды
+
+            Console.WriteLine("\nВы просыпаетесь в темной комнате. Как вы будете действовать?");
             Console.WriteLine("1. Осмотреться.");
             Console.WriteLine("2. Выйти из комнаты.");
             Console.Write("Введите номер действия: ");
@@ -31,7 +35,7 @@ namespace TextQuest
         static void InspectRoom()
         {
             Console.WriteLine("Вы осматриваетесь и находите старый ключ.");
-            Console.WriteLine("Теперь вы можете:n1. Взять ключ.n2. Выйти из комнаты.");
+            Console.WriteLine("Теперь вы можете:\n1. Взять ключ.\n2. Выйти из комнаты.");
             Console.Write("Введите номер действия: ");
 
             string choice = Console.ReadLine();
@@ -56,7 +60,7 @@ namespace TextQuest
         {
             Console.WriteLine("Вы выходите из комнаты и попадаете в длинный коридор.");
             Console.WriteLine("На вашем пути есть две двери.");
-            Console.WriteLine("1. Дверь слева.n2. Дверь справа.");
+            Console.WriteLine("1. Дверь слева.\n2. Дверь справа.");
             Console.Write("Введите номер действия: ");
 
             string choice = Console.ReadLine();
